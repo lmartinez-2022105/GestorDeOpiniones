@@ -1,0 +1,405 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "GestorDeOpiniones",
+    "dateExported": "2024-03-03T03:53:03.425Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "34c263cd-5395-404c-ae89-f654282e9f80",
+            "name": "Post",
+            "containerId": "",
+            "created": "2024-02-29T04:57:45.409Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "e9bad62e-c989-402b-a455-d22865b4bf53",
+            "name": "Comments",
+            "containerId": "",
+            "created": "2024-02-29T04:58:03.596Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "d5c4402a-fe91-456b-947b-572c41acfe9c",
+            "name": "UserSettings",
+            "containerId": "",
+            "created": "2024-02-29T04:58:13.860Z",
+            "sortNum": 30000
+        },
+        {
+            "_id": "671d7103-00fc-4154-953c-241cd57d5a40",
+            "name": "PublicRoutes",
+            "containerId": "",
+            "created": "2024-02-29T04:58:25.203Z",
+            "sortNum": 40000
+        },
+        {
+            "_id": "77bca8b3-c62b-45bf-a4e7-e3472bfe17a4",
+            "name": "Category",
+            "containerId": "",
+            "created": "2024-03-03T01:12:05.130Z",
+            "sortNum": 50000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "b82f9bfc-8778-4a43-b1be-a9be8e5ae831",
+            "colId": "96241c3b-c5bf-4193-841a-3d7ac8912d83",
+            "containerId": "671d7103-00fc-4154-953c-241cd57d5a40",
+            "name": "register",
+            "url": "/user/register",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-02-29T04:58:43.857Z",
+            "modified": "2024-02-29T05:01:38.819Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "username",
+                        "value": "carmc"
+                    },
+                    {
+                        "name": "email",
+                        "value": "clm@gmail.com"
+                    },
+                    {
+                        "name": "password",
+                        "value": "12345678"
+                    },
+                    {
+                        "name": "name",
+                        "value": "Carlos"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "351abe18-1d86-447a-a6ed-8a26db43c06e",
+            "colId": "96241c3b-c5bf-4193-841a-3d7ac8912d83",
+            "containerId": "671d7103-00fc-4154-953c-241cd57d5a40",
+            "name": "login",
+            "url": "/user/login",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2024-02-29T05:09:55.560Z",
+            "modified": "2024-03-03T03:36:03.814Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "username",
+                        "value": "carmc",
+                        "isDisabled": true
+                    },
+                    {
+                        "name": "password",
+                        "value": "12345678"
+                    },
+                    {
+                        "name": "email",
+                        "value": "clm@gmail.com"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "8fceabc3-5084-4a2f-92ad-57a222796019",
+            "colId": "96241c3b-c5bf-4193-841a-3d7ac8912d83",
+            "containerId": "d5c4402a-fe91-456b-947b-572c41acfe9c",
+            "name": "updateAccount",
+            "url": "/user/update",
+            "method": "PUT",
+            "sortNum": 40000,
+            "created": "2024-02-29T05:57:21.636Z",
+            "modified": "2024-03-03T02:01:37.277Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUzZDRhYzM2ZmUzNTM4ODU2YTQyYjgiLCJ1c2VybmFtZSI6ImNhcm1jIiwiZW1haWwiOiJjbG1AZ21haWwuY29tIiwibmFtZSI6IkNhcmxvcyIsImlhdCI6MTcwOTQyOTkzNCwiZXhwIjoxNzA5NDQ0MzM0fQ.zCz6aspxj2KurdTcmH9WGQ-xACGUXmtFDJWuw44nARI"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Jose"
+                    },
+                    {
+                        "name": "oldpassword",
+                        "value": "abcd1234"
+                    },
+                    {
+                        "name": "newpassword",
+                        "value": "12345679"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "2c17839c-240b-414b-b6a7-44de15c34433",
+            "colId": "96241c3b-c5bf-4193-841a-3d7ac8912d83",
+            "containerId": "34c263cd-5395-404c-ae89-f654282e9f80",
+            "name": "createPost",
+            "url": "/post/create",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2024-03-01T05:20:06.424Z",
+            "modified": "2024-03-03T03:48:16.157Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUzZjBkODliNDQ4OWQ0NGZlZTQyMDkiLCJ1c2VybmFtZSI6ImNhcm1jIiwiZW1haWwiOiJjbG1AZ21haWwuY29tIiwibmFtZSI6IkNhcmxvcyIsImlhdCI6MTcwOTQzNzE0NSwiZXhwIjoxNzA5NDUxNTQ1fQ.fe1xG4yV8fjNPoOjh5xsO9xRJSPmYGn3ap8o6ak6pIw"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "title",
+                        "value": "Leche"
+                    },
+                    {
+                        "name": "category",
+                        "value": "65e3f1039b4489d44fee420e"
+                    },
+                    {
+                        "name": "text",
+                        "value": "Golpe de estado en el país africano"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "d7fee914-85f6-48a9-a377-755f08e2ea2f",
+            "colId": "96241c3b-c5bf-4193-841a-3d7ac8912d83",
+            "containerId": "34c263cd-5395-404c-ae89-f654282e9f80",
+            "name": "updatePost",
+            "url": "/post/update/65e165dd379a87d7cfc8f069",
+            "method": "PUT",
+            "sortNum": 60000,
+            "created": "2024-03-01T05:29:41.255Z",
+            "modified": "2024-03-03T01:23:23.481Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUwMGZiMjA2ZDhmN2Q1NTYyYjg4OTMiLCJ1c2VybmFtZSI6ImNhcm1jIiwiZW1haWwiOiJjbG1AZ21haWwuY29tIiwibmFtZSI6Ikx1aXMiLCJpYXQiOjE3MDk0Mjg0NDIsImV4cCI6MTcwOTQ0Mjg0Mn0.HlZUMPYObUAXe6XV4wz1uEPRiZjY4Qb4LQGoO6kSm_s"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "text",
+                        "value": "un evento importante para todos los catolicos",
+                        "isDisabled": true
+                    },
+                    {
+                        "name": "category",
+                        "value": "65e3cf35269455a8587f3012"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "37229f30-ec2c-461e-96cd-6e3abc82f767",
+            "colId": "96241c3b-c5bf-4193-841a-3d7ac8912d83",
+            "containerId": "34c263cd-5395-404c-ae89-f654282e9f80",
+            "name": "deletePost",
+            "url": "/post/delete/65e3f2e54676c497f0015124",
+            "method": "DELETE",
+            "sortNum": 70000,
+            "created": "2024-03-03T01:09:58.122Z",
+            "modified": "2024-03-03T03:49:26.479Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUzZjBkODliNDQ4OWQ0NGZlZTQyMDkiLCJ1c2VybmFtZSI6ImNhcm1jIiwiZW1haWwiOiJjbG1AZ21haWwuY29tIiwibmFtZSI6IkNhcmxvcyIsImlhdCI6MTcwOTQzNzU3MiwiZXhwIjoxNzA5NDUxOTcyfQ.Q8T6t5gRMkaSkxZOtYVMnm5ur9Qud4Ri6QHwdqXQLYM"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "2470d0b8-138e-4be9-9505-04db286c7c85",
+            "colId": "96241c3b-c5bf-4193-841a-3d7ac8912d83",
+            "containerId": "77bca8b3-c62b-45bf-a4e7-e3472bfe17a4",
+            "name": "createCategory",
+            "url": "/category/create",
+            "method": "POST",
+            "sortNum": 80000,
+            "created": "2024-03-03T01:12:20.094Z",
+            "modified": "2024-03-03T03:39:47.485Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUzZjBkODliNDQ4OWQ0NGZlZTQyMDkiLCJ1c2VybmFtZSI6ImNhcm1jIiwiZW1haWwiOiJjbG1AZ21haWwuY29tIiwibmFtZSI6IkNhcmxvcyIsImlhdCI6MTcwOTQzNzE0NSwiZXhwIjoxNzA5NDUxNTQ1fQ.fe1xG4yV8fjNPoOjh5xsO9xRJSPmYGn3ap8o6ak6pIw"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Politíca"
+                    },
+                    {
+                        "name": "description",
+                        "value": "todo sobre la politíca del mundo"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "86069161-c6ba-442b-9692-68206350e59c",
+            "colId": "96241c3b-c5bf-4193-841a-3d7ac8912d83",
+            "containerId": "77bca8b3-c62b-45bf-a4e7-e3472bfe17a4",
+            "name": "updateCategory",
+            "url": "/category/update/65e3cf35269455a8587f3012",
+            "method": "PUT",
+            "sortNum": 90000,
+            "created": "2024-03-03T01:13:24.139Z",
+            "modified": "2024-03-03T01:22:45.160Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUwMGZiMjA2ZDhmN2Q1NTYyYjg4OTMiLCJ1c2VybmFtZSI6ImNhcm1jIiwiZW1haWwiOiJjbG1AZ21haWwuY29tIiwibmFtZSI6Ikx1aXMiLCJpYXQiOjE3MDk0Mjg0NDIsImV4cCI6MTcwOTQ0Mjg0Mn0.HlZUMPYObUAXe6XV4wz1uEPRiZjY4Qb4LQGoO6kSm_s"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Cuaresma",
+                        "isDisabled": true
+                    },
+                    {
+                        "name": "description",
+                        "value": "La importancia de la cuaresma"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "b8c54c2d-f1a0-45e4-869d-1dd796151a24",
+            "colId": "96241c3b-c5bf-4193-841a-3d7ac8912d83",
+            "containerId": "77bca8b3-c62b-45bf-a4e7-e3472bfe17a4",
+            "name": "deleteCategory",
+            "url": "",
+            "method": "GET",
+            "sortNum": 100000,
+            "created": "2024-03-03T01:13:34.419Z",
+            "modified": "2024-03-03T01:13:34.419Z",
+            "headers": []
+        },
+        {
+            "_id": "373b339d-c9f3-4c64-bbeb-c1d8d90d2405",
+            "colId": "96241c3b-c5bf-4193-841a-3d7ac8912d83",
+            "containerId": "e9bad62e-c989-402b-a455-d22865b4bf53",
+            "name": "createComment",
+            "url": "/comment/create/65e3f2e54676c497f0015124",
+            "method": "POST",
+            "sortNum": 110000,
+            "created": "2024-03-03T02:41:27.445Z",
+            "modified": "2024-03-03T03:48:57.026Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUzZjBkODliNDQ4OWQ0NGZlZTQyMDkiLCJ1c2VybmFtZSI6ImNhcm1jIiwiZW1haWwiOiJjbG1AZ21haWwuY29tIiwibmFtZSI6IkNhcmxvcyIsImlhdCI6MTcwOTQzNzE0NSwiZXhwIjoxNzA5NDUxNTQ1fQ.fe1xG4yV8fjNPoOjh5xsO9xRJSPmYGn3ap8o6ak6pIw"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "title",
+                        "value": "Que pena"
+                    },
+                    {
+                        "name": "text",
+                        "value": "Dios los proteja"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "67b02f67-833a-454b-896c-a3e74e8e7eb8",
+            "colId": "96241c3b-c5bf-4193-841a-3d7ac8912d83",
+            "containerId": "34c263cd-5395-404c-ae89-f654282e9f80",
+            "name": "allPosts",
+            "url": "/post/display",
+            "method": "GET",
+            "sortNum": 120000,
+            "created": "2024-03-03T03:16:00.843Z",
+            "modified": "2024-03-03T03:17:33.012Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUzZDRhYzM2ZmUzNTM4ODU2YTQyYjgiLCJ1c2VybmFtZSI6ImNhcm1jIiwiZW1haWwiOiJjbG1AZ21haWwuY29tIiwibmFtZSI6IkNhcmxvcyIsImlhdCI6MTcwOTQyOTkzNCwiZXhwIjoxNzA5NDQ0MzM0fQ.zCz6aspxj2KurdTcmH9WGQ-xACGUXmtFDJWuw44nARI"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "70ad638a-8966-4c67-b44d-5acb6d2cbb25",
+            "colId": "96241c3b-c5bf-4193-841a-3d7ac8912d83",
+            "containerId": "e9bad62e-c989-402b-a455-d22865b4bf53",
+            "name": "deleteComment",
+            "url": "/comment/delete",
+            "method": "DELETE",
+            "sortNum": 130000,
+            "created": "2024-03-03T03:51:54.071Z",
+            "modified": "2024-03-03T03:52:31.424Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "74c2e0a5-7d25-4f43-ab97-3b8e8c4cae11",
+            "colId": "96241c3b-c5bf-4193-841a-3d7ac8912d83",
+            "containerId": "e9bad62e-c989-402b-a455-d22865b4bf53",
+            "name": "updateComment",
+            "url": "/comment/update",
+            "method": "PUT",
+            "sortNum": 140000,
+            "created": "2024-03-03T03:52:13.987Z",
+            "modified": "2024-03-03T03:52:28.979Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ],
+    "settings": {
+        "options": {
+            "baseUrl": "localhost:8000"
+        }
+    }
+}
